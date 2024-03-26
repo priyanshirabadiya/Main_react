@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.blank{
+  color: red;
+}
+
+.blue{
+  color: blue;
+}
+
+h1:nth-child(1){
+  color: blue;
+}
+
+img{
+  height: 200px !important;
+}
