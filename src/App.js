@@ -8,6 +8,7 @@ import Ulli,{ Olli } from './components/Ulli';
 import Mynew from './components/Mynew';
 import Spara from './components/Spara';
 import Rendaring from './components/Rendaring';
+import ComA from './components/ComA';
 
     function App(){
       return(
@@ -24,8 +25,9 @@ import Rendaring from './components/Rendaring';
           <Olli></Olli> 
           <Mynew></Mynew>
           <Spara/> */}
-          <Rendaring/>
-          <Img/>
+          {/* <Rendaring/>
+          <Img/> */}
+          <ComA></ComA>
         </div>
     );
 }
