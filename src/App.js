@@ -16,7 +16,7 @@ import Rendaring from './components/Rendaring';
           <Paragrapg></Paragrapg>
           <div className="blue">
           <Para2></Para2>
-          </div>
+          </div>  
           <Para3></Para3>
           <Para4></Para4>
           <Img></Img>
