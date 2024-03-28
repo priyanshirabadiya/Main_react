@@ -16,8 +16,12 @@ let arr = ["anjj","jjj","uuu"];
                </>
       })} */}
 
-      arr.map()
-
+   {/* {arr.map((value , index) => {
+      return <> 
+         <h1>{value}{index}</h1>
+      </>
+   } )} */}
+   
        {/*  expretion */}
        <p>Lorem, ipsum dolor.{5*2}</p>
        <h1>hello ma'am : good morning</h1>
