@@ -25,9 +25,9 @@ import ComA from './components/ComA';
           <Olli></Olli> 
           <Mynew></Mynew>
           <Spara/> */}
-          {/* <Rendaring/>
-          <Img/> */}
-          <ComA></ComA>
+          <Rendaring/>
+          <Img/>
+          {/* <ComA></ComA> */}
         </div>
     );
 }
