@@ -10,11 +10,13 @@ let arr = ["anjj","jjj","uuu"];
        {/* <img src={Img1} alt="image"/> */}
     {/* list */}
 
-      {arr.map((cvalue, ind , arr)=>{
+      {/* {arr.map((cvalue, ind , arr)=>{
          return <>
                   <h1>{cvalue}{ind}{arr}</h1>
                </>
-      })}
+      })} */}
+
+      arr.map()
 
        {/*  expretion */}
        <p>Lorem, ipsum dolor.{5*2}</p>
