@@ -9,6 +9,8 @@ import Mynew from './components/Mynew';
 import Spara from './components/Spara';
 import Rendaring from './components/Rendaring';
 import ComA from './components/ComA';
+import Props from './components/Props';
+import img from './assets/logo192.png'
 
     function App(){
       return(
@@ -25,9 +27,12 @@ import ComA from './components/ComA';
           <Olli></Olli> 
           <Mynew></Mynew>
           <Spara/> */}
-          <Rendaring/>
-          <Img/>
+          {/* <Rendaring/>
+          <Img/> */}
           {/* <ComA></ComA> */}
+          
+          <Props name = "priyanshi" age = {18} sname = "rabadiya" img = {img} ></Props>
+
         </div>
     );
 }
