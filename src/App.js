@@ -11,6 +11,8 @@ import Rendaring from './components/Rendaring';
 import ComA from './components/ComA';
 import Props from './components/Props';
 import img from './assets/logo192.png'
+import Data from './components/Data';
+
 
     function App(){
       return(
@@ -30,10 +32,18 @@ import img from './assets/logo192.png'
           {/* <Rendaring/>
           <Img/> */}
           {/* <ComA></ComA> */}
-          
-          <Props name = "priyanshi" age = {18} sname = "rabadiya" img = {img} ></Props>
+          {/* <Props name = "priyanshi" age = {18} sname = "rabadiya" img = {img} ></Props> */}
 
+          {Data.map((cvalue,index,arr)=>{
+            // console.log(cvalue);
+            return <>
+            {/* Why index is can print here */}
+                  <Props key={index} name={cvalue.name} disc={cvalue.disc} course={cvalue.course}></Props>
+            </>
+          })}
+        {/* key={index} name={cvalue.name} disc={cvalue.disc} course={cvalue.course} */}
         </div>
     );
 }
 export default App;
+
