@@ -13,10 +13,15 @@ import Props from './components/Props';
 import img from './assets/logo192.png'
 import Data from './components/Data';
 
-
     function App(){
+
+      function Paranthtensisi() {
+        return ( <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, totam.</h1> )   
+      }    
       return(
-        <div className="App">
+        <>
+        <Paranthtensisi></Paranthtensisi>
+
           {/* <Head/>
           <Paragrapg></Paragrapg>
           <div className="blue">
@@ -34,16 +39,41 @@ import Data from './components/Data';
           {/* <ComA></ComA> */}
           {/* <Props name = "priyanshi" age = {18} sname = "rabadiya" img = {img} ></Props> */}
 
-          {Data.map((cvalue,index,arr)=>{
-            // console.log(cvalue);
-            return <>
-            {/* Why index is can print here */}
-                  <Props key={index} name={cvalue.name} disc={cvalue.disc} course={cvalue.course}></Props>
-            </>
-          })}
-        {/* key={index} name={cvalue.name} disc={cvalue.disc} course={cvalue.course} */}
-        </div>
+          {/* {Data.map((cvalue,ind,arr)=>{
+            console.log(cvalue,"cvalue");
+            return (<Props key={ind} name={cvalue.name}  disc={cvalue.disc} img={img} course={cvalue.course}  />);
+          })} */}
+
+          {/* not work */}
+          {/* {
+            Data.forEach((value,ind) => {
+              return( <Props key={ind} name={value.name} ></Props> )
+            } )
+          } */}
+
+{/* ------------------------------------------------------------------------------------------------- */}
+
+          {/* <div className='flex' >
+          <Props name= "priyanshi" ></Props>
+          <Props name= "priyanshi" ></Props>
+          <Props name= "priyanshi" course= "Graphics design" ></Props>
+          </div> */}
+
+
+          {/* <div className="flex" style={{display:"flex"}} >
+          {
+            Data.map((value, index) => {
+              console.log(value, "value");
+              return (
+                // <div key={value.name}>  -->  Each child in a list should have a unique "key" prop.  -> so any value of data is unique like name in this array than you cantake it as unique key or else index is always unique for each element  
+                <div key={index}> 
+                  <Props name={value.name} Address={value.Address} course = {value.course} ></Props>
+                </div>
+              );
+            })
+          }
+          </div> */}
+    </>
     );
 }
 export default App;
-
