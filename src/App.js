@@ -34,10 +34,18 @@ function App() {
       {/* <ComA></ComA> */}
       {/* <Props name = "priyanshi" age = {18} sname = "rabadiya" img = {img} ></Props> */}
 
-      {/* {Data.map((cvalue,ind,arr)=>{
-            console.log(cvalue,"cvalue");
-            return (<Props key={ind} name={cvalue.name}  disc={cvalue.disc} img={img} course={cvalue.course}  />);
-          })} */}
+      {Data.map((cvalue, ind, arr) => {
+        console.log(cvalue, "cvalue");
+        return (
+          <Props
+            key={ind}
+            name={cvalue.name}
+            disc={cvalue.disc}
+            img={cvalue.img}
+            course={cvalue.course}
+          />
+        );
+      })}
 
       {/* not work */}
       {/* {
@@ -56,12 +64,12 @@ function App() {
 
       {/* <div className="flex" style={{display:"flex"}} >
           {
-            Data.map((value, index) => {
-              console.log(value, "value");
+            Data.map((cvalue, index) => {
+              console.log(cvalue, "value");
               return (
                 // <div key={value.name}>  -->  Each child in a list should have a unique "key" prop.  -> so any value of data is unique like name in this array than you cantake it as unique key or else index is always unique for each element  
                 <div key={index}> 
-                  <Props name={value.name} Address={value.Address} course = {value.course} ></Props>
+                  <Props name={cvalue.name}  disc={cvalue.disc} img={cvalue.img} course={cvalue.course} ></Props>
                 </div>
               );
             })

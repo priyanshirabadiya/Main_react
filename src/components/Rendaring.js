@@ -28,6 +28,9 @@ const Rendaring = () => {
         <h1>{name}</h1> 
         {/* List rendering  */}
         <h1>{listitem.fname}</h1> 
+
+
+        {/* Image rendering in image.JS */}
     </>
   );
 };

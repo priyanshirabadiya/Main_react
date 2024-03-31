@@ -1,18 +1,30 @@
-import React from 'react'
+import React from "react";
 
-export default function Props(props){
-  console.log(props,"===");
+export default function Props(props) {
+  console.log(props, "===");
   return (
     <div>
-        <h1>Name : {props.name} <br /> 
-          <img src={props.img} alt="" /><br />
-             name:{props.name} <br />
-               disc : {props.disc} <br /> 
-                course : {props.course} 
-        </h1>
+      <h1>
+        Name : {props.name} <br />
+        <img src={props.img} alt="" />
+        <br />
+        name:{props.name} <br />
+        disc : {props.disc} <br />
+        course : {props.course}
+      </h1>
     </div>
-  )
+  );
 }
+
+// const Props = (props) => {
+//   const [fname, name] = props;
+//   return(
+// <>
+//     <div>
+//         {fname} {name}
+//     </div>
+// </>)
+// }
 
 // --------------------------------------------------------------------------------------------------------
 
@@ -27,4 +39,3 @@ export default function Props(props){
 //     </>
 //   )
 // }
-

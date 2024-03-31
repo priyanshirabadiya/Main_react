@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 import img1 from '../assets/download.jpg'
 const Data = [
     {
