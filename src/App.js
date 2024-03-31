@@ -1,28 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 // import './style.css'
-import Head from './components/Head';
-import Paragrapg,{Para2,Para3,Para4} from './components/Para';
-import Img  from './components/Image';
-import Ulli,{ Olli } from './components/Ulli';
-import Mynew from './components/Mynew';
-import Spara from './components/Spara';
-import Rendaring from './components/Rendaring';
-import ComA from './components/ComA';
-import Props from './components/Props';
-import img from './assets/logo192.png'
-import Data from './components/Data';
+import Head from "./components/Head";
+import Paragrapg, { Para2, Para3, Para4 } from "./components/Para";
+import Img from "./components/Image";
+import Ulli, { Olli } from "./components/Ulli";
+import Mynew from "./components/Mynew";
+import Spara from "./components/Spara";
+import Rendaring from "./components/Rendaring";
+import ComA from "./components/ComA";
+import Props from "./components/Props";
+import img from "./assets/logo192.png";
+import Data from "./components/Data";
 
-    function App(){
-
-      function Paranthtensisi() {
-        return ( <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, totam.</h1> )   
-      }    
-      return(
-        <>
-        <Paranthtensisi></Paranthtensisi>
-
-          {/* <Head/>
+function App() {
+  return (
+    <>
+      {/* <Paranthtensisi></Paranthtensisi> */}
+      {/* <Head/>
           <Paragrapg></Paragrapg>
           <div className="blue">
           <Para2></Para2>
@@ -34,33 +29,32 @@ import Data from './components/Data';
           <Olli></Olli> 
           <Mynew></Mynew>
           <Spara/> */}
-          {/* <Rendaring/>
+      {/* <Rendaring/>
           <Img/> */}
-          {/* <ComA></ComA> */}
-          {/* <Props name = "priyanshi" age = {18} sname = "rabadiya" img = {img} ></Props> */}
+      {/* <ComA></ComA> */}
+      {/* <Props name = "priyanshi" age = {18} sname = "rabadiya" img = {img} ></Props> */}
 
-          {/* {Data.map((cvalue,ind,arr)=>{
+      {/* {Data.map((cvalue,ind,arr)=>{
             console.log(cvalue,"cvalue");
             return (<Props key={ind} name={cvalue.name}  disc={cvalue.disc} img={img} course={cvalue.course}  />);
           })} */}
 
-          {/* not work */}
-          {/* {
+      {/* not work */}
+      {/* {
             Data.forEach((value,ind) => {
               return( <Props key={ind} name={value.name} ></Props> )
             } )
           } */}
 
-{/* ------------------------------------------------------------------------------------------------- */}
+      {/* ---------------------------------------Practice---------------------------------------------------------- */}
 
-          {/* <div className='flex' >
+      {/* <div className='flex' >
           <Props name= "priyanshi" ></Props>
           <Props name= "priyanshi" ></Props>
           <Props name= "priyanshi" course= "Graphics design" ></Props>
           </div> */}
 
-
-          {/* <div className="flex" style={{display:"flex"}} >
+      {/* <div className="flex" style={{display:"flex"}} >
           {
             Data.map((value, index) => {
               console.log(value, "value");
@@ -74,6 +68,6 @@ import Data from './components/Data';
           }
           </div> */}
     </>
-    );
+  );
 }
 export default App;
