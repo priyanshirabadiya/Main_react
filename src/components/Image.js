@@ -22,7 +22,7 @@ let arr = ["anjj","jjj","uuu"];
       </>
    } )} */}
    
-       {/*  expretion */}
+       {/* expretion */}
        <p>Lorem, ipsum dolor.{5*2}</p>
        <h1>hello ma'am : good morning</h1>
     </> )
