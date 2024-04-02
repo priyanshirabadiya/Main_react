@@ -12,10 +12,34 @@ import ComA from "./components/ComA";
 import Props from "./components/Props";
 import img from "./assets/logo192.png";
 import Data from "./components/Data";
+import { useState } from "react";
+import ComC from "./components/ComC";
 
 function App() {
+  //   const [count, setCount] = useState(0);
+  //   const [count2, setCount2] = useState(0);
+
+  // let a = 10 ;
+
+  // const incre =() => {
+  //   setCount(count + 10)
+  // }
+
+  // const decre =() => {
+  //   setCount2(count2 - 10)
+  // }
+
   return (
     <>
+      {/* <button onClick={incre}>Increment</button>
+      <h1>{count}</h1>
+      
+   <button onClick={decre}>Decrement</button>
+   <h1>{count2}</h1> */}
+
+      {/* {(a==1) ? <ComC/> : <Paragrapg/>} */}
+
+      {/* Lec -1 */}
       {/* <Paranthtensisi></Paranthtensisi> */}
       {/* <Head/>
           <Paragrapg></Paragrapg>
@@ -31,9 +55,14 @@ function App() {
           <Spara/> */}
       {/* <Rendaring/>
           <Img/> */}
+      {/* Lec -2  nested cpmponent */}
       {/* <ComA></ComA> */}
+
+      {/* Lec - 3 props/de - structing props  */}
       {/* <Props name = "priyanshi" age = {18} sname = "rabadiya" img = {img} ></Props> */}
 
+      {/* L-4,5 map method / de-strucring */}
+      {/* <div className="flex">
       {Data.map((cvalue, ind, arr) => {
         console.log(cvalue, "cvalue");
         return (
@@ -46,35 +75,13 @@ function App() {
           />
         );
       })}
+  </div> */}
 
-      {/* not work */}
-      {/* {
-            Data.forEach((value,ind) => {
-              return( <Props key={ind} name={value.name} ></Props> )
-            } )
-          } */}
 
-      {/* ---------------------------------------Practice---------------------------------------------------------- */}
+    {/* Lec - 6 ternery oprator */}
 
-      {/* <div className='flex' >
-          <Props name= "priyanshi" ></Props>
-          <Props name= "priyanshi" ></Props>
-          <Props name= "priyanshi" course= "Graphics design" ></Props>
-          </div> */}
 
-      {/* <div className="flex" style={{display:"flex"}} >
-          {
-            Data.map((cvalue, index) => {
-              console.log(cvalue, "value");
-              return (
-                // <div key={value.name}>  -->  Each child in a list should have a unique "key" prop.  -> so any value of data is unique like name in this array than you cantake it as unique key or else index is always unique for each element  
-                <div key={index}> 
-                  <Props name={cvalue.name}  disc={cvalue.disc} img={cvalue.img} course={cvalue.course} ></Props>
-                </div>
-              );
-            })
-          }
-          </div> */}
+
     </>
   );
 }

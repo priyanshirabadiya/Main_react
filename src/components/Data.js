@@ -24,7 +24,7 @@ const Data = [
         disc : "i am livimga in surat",
         course : "ful-stack",
         img : img1
-    },
+    }
 ]
 
 
