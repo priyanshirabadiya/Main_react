@@ -12,8 +12,9 @@ import ComA from "./components/ComA";
 import Props from "./components/Props";
 import img from "./assets/logo192.png";
 import Data from "./components/Data";
-import { useState } from "react";
 import ComC from "./components/ComC";
+// import { useState } from "react";
+import Usestate  from "./components/Usestate";
 
 function App() {
   //   const [count, setCount] = useState(0);
@@ -33,11 +34,10 @@ function App() {
     <>
       {/* <button onClick={incre}>Increment</button>
       <h1>{count}</h1>
-      
-   <button onClick={decre}>Decrement</button>
-   <h1>{count2}</h1> */}
 
-      {/* {(a==1) ? <ComC/> : <Paragrapg/>} */}
+      <button onClick={decre}>Decrement</button>
+      <h1>{count2}</h1> */}
+
 
       {/* Lec -1 */}
       {/* <Paranthtensisi></Paranthtensisi> */}
@@ -77,11 +77,10 @@ function App() {
       })}
   </div> */}
 
+      {/* ternary operator watch on tasks  */}
+      {/* {(a==1) ? <ComC/> : <Paragrapg/>} */}
 
-    {/* Lec - 6 ternery oprator */}
-
-
-
+      <Usestate/>
     </>
   );
 }
