@@ -15,7 +15,7 @@ import Data from "./components/Data";
 import ComC from "./components/ComC";
 // import { useState } from "react";
 import Usestate  from "./components/Usestate";
-
+import Classcompo from "./components/Classcompo";
 function App() {
   //   const [count, setCount] = useState(0);
   //   const [count2, setCount2] = useState(0);
@@ -80,7 +80,11 @@ function App() {
       {/* ternary operator watch on tasks  */}
       {/* {(a==1) ? <ComC/> : <Paragrapg/>} */}
 
-      <Usestate/>
+      {/* <Usestate/> */}
+
+  {/* Class component */}
+
+  <Classcompo/>
     </>
   );
 }
