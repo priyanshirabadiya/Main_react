@@ -16,6 +16,7 @@ import ComC from "./components/ComC";
 // import { useState } from "react";
 import Usestate  from "./components/Usestate";
 import Classcompo from "./components/Classcompo";
+import Table from "./components/Table";
 function App() {
   //   const [count, setCount] = useState(0);
   //   const [count2, setCount2] = useState(0);
@@ -85,6 +86,15 @@ function App() {
   {/* Class component */}
 
   <Classcompo/>
+
+
+  {/* Table component */}
+
+  {/* <Table/> */}
+
+
+
+
     </>
   );
 }
