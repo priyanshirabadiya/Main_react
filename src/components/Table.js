@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Data from "./TableData";
 
-export default function Table() {
+function Table() {
+    const [data, setData] = useState(Data)
+ 
+    console.log(data,"TableData")
     return (
         <div>
             <table className="table-auto w-full text-center">
@@ -14,7 +18,18 @@ export default function Table() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className=' h-10 bg-gray-400 text-white border'>
+                    {data.map((cvalue, inx)=>{
+                        return(<>
+                         <tr className=' h-10 bg-gray-400 text-white border'>
+                        <td>{cvalue.name}</td>
+                        <td>{cvalue.name}</td>
+                        <td>{cvalue.name}</td>
+                        <td>{cvalue.sname}</td>
+                        <td>{cvalue.sname}</td>
+                        </tr>
+                        </>)
+                    })}
+                    {/* <tr className=' h-10 bg-gray-400 text-white border'>
                         <td>1</td>
                         <td>Priyanshi</td>
                         <td>priyanshi@gamil.com</td>
@@ -48,12 +63,12 @@ export default function Table() {
                         <td>jinal@gmail.com</td>
                         <td>Delhi</td>
                         <td>8921456635</td> 
-                    </tr>
+                    </tr> */}
                 </tbody>
             </table>
         </div>
     )
 }
 
-
+export default Table;
 

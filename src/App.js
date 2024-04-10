@@ -13,10 +13,14 @@ import Props from "./components/Props";
 import img from "./assets/logo192.png";
 import Data from "./components/Data";
 import ComC from "./components/ComC";
-// import { useState } from "react";
 import Usestate  from "./components/Usestate";
 import Classcompo from "./components/Classcompo";
 import Table from "./components/Table";
+import Effect from "./components/Useeffect";
+import Aaa from "./components/Aaa"
+
+
+
 function App() {
   //   const [count, setCount] = useState(0);
   //   const [count2, setCount2] = useState(0);
@@ -85,15 +89,19 @@ function App() {
 
   {/* Class component */}
 
-  <Classcompo/>
+  {/* <Classcompo/> */}
+
+
+  {/* Use effect incre decre */}
+  {/* <Effect/> */}
 
 
   {/* Table component */}
 
-  {/* <Table/> */}
+  <Table/>
 
-
-
+  {/* <Effect/> */}
+  {/* <Aaa/> */}
 
     </>
   );
