@@ -15,11 +15,9 @@ import Data from "./components/Data";
 import ComC from "./components/ComC";
 import Usestate  from "./components/Usestate";
 import Classcompo from "./components/Classcompo";
-import Table from "./components/Table";
 import Effect from "./components/Useeffect";
-import Aaa from "./components/Aaa"
-
-
+import EffectUse from "./components/EffectUse";
+import Tablesec from "./components/Tablesec";
 
 function App() {
   //   const [count, setCount] = useState(0);
@@ -96,12 +94,16 @@ function App() {
   {/* <Effect/> */}
 
 
+  {/* EffectUSe */}
+
+  {/* <EffectUse/> */}
+
   {/* Table component */}
 
-  <Table/>
+  {/* <Table/> */}
 
-  {/* <Effect/> */}
-  {/* <Aaa/> */}
+  <Tablesec/>
+
 
     </>
   );
