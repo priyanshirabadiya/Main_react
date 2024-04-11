@@ -1,3 +1,4 @@
+import { createContext } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 // import './style.css'
@@ -13,11 +14,14 @@ import Props from "./components/Props";
 import img from "./assets/logo192.png";
 import Data from "./components/Data";
 import ComC from "./components/ComC";
-import Usestate  from "./components/Usestate";
+import Usestate from "./components/Usestate";
 import Classcompo from "./components/Classcompo";
 import Effect from "./components/Useeffect";
 import EffectUse from "./components/EffectUse";
 import Tablesec from "./components/Tablesec";
+
+const context1 = createContext();
+
 
 function App() {
   //   const [count, setCount] = useState(0);
@@ -59,7 +63,9 @@ function App() {
       {/* <Rendaring/>
           <Img/> */}
       {/* Lec -2  nested cpmponent */}
-      {/* <ComA></ComA> */}
+      <context1.Provider value="abc">
+        <ComA />
+      </context1.Provider>
 
       {/* Lec - 3 props/de - structing props  */}
       {/* <Props name = "priyanshi" age = {18} sname = "rabadiya" img = {img} ></Props> */}
@@ -85,27 +91,28 @@ function App() {
 
       {/* <Usestate/> */}
 
-  {/* Class component */}
+      {/* Class component */}
 
-  {/* <Classcompo/> */}
-
-
-  {/* Use effect incre decre */}
-  {/* <Effect/> */}
+      {/* <Classcompo/> */}
 
 
-  {/* EffectUSe */}
+      {/* Use effect incre decre */}
+      {/* <Effect/> */}
 
-  {/* <EffectUse/> */}
 
-  {/* Table component */}
+      {/* EffectUSe */}
 
-  {/* <Table/> */}
+      {/* <EffectUse/> */}
 
-  <Tablesec/>
+      {/* Table component */}
+
+      {/* <Table/> */}
+
+      {/* <Tablesec/> */}
 
 
     </>
   );
 }
+export { context1 };
 export default App;

@@ -39,3 +39,7 @@ const Data = [
 ]
 
 export default Data;
+/**
+    useEffect(()=>{
+            setData(Data)
+        },[]) */

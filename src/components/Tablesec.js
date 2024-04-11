@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect } from 'react'
 import Data from './TableData';   
 function Tablesec() {
-    const [data] = useState(Data);
+    const [data,setData] = useState(Data);
     console.log(data);
+
+    useEffect(()=>{
+        setData(Data)
+    },[])
+
     return (
         <table className="table-auto w-full text-center">
             <thead className=' h-10 bg-gray-500 text-white border'>
